@@ -17,6 +17,13 @@ html {
 	overflow-x: hidden;
 }
 
+body:after {
+	content: url(../images/nav-img-1.jpg),
+		url(../images/nav-img-2.png) url(../images/nav-img-3.jpg)
+			url(../images/nav-img-4.jpg);
+	display: none;
+}
+
 .logo-nav {
 	width: 72px;
 	margin: 10px 0 0 10px;

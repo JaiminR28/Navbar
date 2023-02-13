@@ -12,6 +12,7 @@
 		/>
 
 		<!-- custom css file link  -->
+
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
@@ -25,5 +26,25 @@
 			<a href="#" class="Nav-list" data-text="Team">Team</a>
 			<div class="background-image"></div>
 		</nav>
+
+		<script>
+			console.log("Script load");
+			function preloader() {
+				console.log("In the function");
+				var img1 = new Image();
+				var img2 = new Image();
+				var img3 = new Image();
+				var img4 = new Image();
+
+				img1.src = "../full screen navbar/images/nav-img-1.jpg";
+				img2.src = "../full screen navbar/images/nav-img-2.png";
+				img3.src = "../full screen navbar/images/nav-img-3.jpg";
+				img4.src = "../full screen navbar/images/nav-img-4.jpg";
+			}
+
+			console.log("calling function");
+			window.onload = preloader();
+			console.log("After the function");
+		</script>
 	</body>
 </html>
